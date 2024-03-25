@@ -1,11 +1,11 @@
-const closeBar = document.querySelector("fa fa-times");
-const sideBar = document.querySelector("fa fa-bars");
-const hiddenMenu = document.getElementById("menu");
+const bars=document.querySelector(".fa-bars");
+const sidebar=document.querySelector(".side");
+const closingbutton=document.querySelector(".fa-times");
 
-sideBar.addEventListener("click", ()=> {
-    hiddenMenu.classList.toggle("show-container");
+bars.addEventListener("click",() =>{
+    sidebar.classList.toggle("show-side");
 });
 
-closeBar.addEventListener("click", ()=> {
-    hiddenMenu.classList.remove("show-container");
-});
+closingbutton.addEventListener("click", () => {
+    sidebar.classList.remove("show-side");
+  });
